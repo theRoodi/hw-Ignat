@@ -1,3 +1,58 @@
 .message {
-
+    display: flex;
+    background-color: #569b34;
+    height: 90px;
+    width: 390px;
 }
+
+.message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.message_box {
+    position: relative;
+    height: 70px;
+    width: 75%;
+    background-color: #2b3038;
+    margin: auto 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.message_box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 99%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(65px at top left, transparent 49%, #2b3038 51%) no-repeat right bottom;
+}
+.message_image {
+    margin: 35px 13px;
+}
+.name {
+    position: absolute;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #a076e7;
+}
+.messages{
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 40px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.time{
+    position: absolute;
+    padding-top: 43px;
+    font-size: 20px;
+    padding-left: 234px;
+    color: #757575;
+}
+
