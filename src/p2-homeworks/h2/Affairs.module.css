@@ -1,3 +1,6 @@
-.someClass {
-
+.task {
+    padding: 15px;
+}
+.task button {
+    margin-left: 10px;
 }
