@@ -1,12 +1,30 @@
 .superInput {
-
+    padding: 5px;
+    background: rgba(164, 164, 164, 0.7);
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid rgba(167, 255, 111, 0.68);
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 1px solid rgba(255, 113, 113, 0.68);
+    background: rgba(164, 164, 164, 0.7);
+    outline: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.errorInput:focus {
+    border: 1px solid rgba(167, 255, 111, 0.68);
 }
 
 .error {
-    color: red;
+    color: #9f0000;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 140, 140, 0.51);
+    margin: 5px;
 }

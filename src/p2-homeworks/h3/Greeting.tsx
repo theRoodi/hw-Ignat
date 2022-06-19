@@ -1,5 +1,7 @@
-import React, {ChangeEvent,KeyboardEvent} from 'react'
+import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
+import SuperInputText from '../h4/common/c1-SuperInputText/SuperInputText';
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 
 type GreetingPropsType = {
     name: string // need to fix any
@@ -12,20 +14,25 @@ type GreetingPropsType = {
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback,onPressEnter , addUser, error, totalUsers} // деструктуризация пропсов
+    {name, setNameCallback, onPressEnter, addUser, error, totalUsers} // деструктуризация пропсов
 ) => {
-    const inputClass = error ? s.errorInput: s.input// need to fix with (?:)
+    const inputClass = error ? s.errorInput : s.input// need to fix with (?:)
 
     return (
         <div className={s.box}>
-            <div>
-                <input value={name}
-                       onChange={setNameCallback}
-                       className={inputClass}
-                       onKeyPress={onPressEnter}/>
-                <div className={s.error}>{error}</div>
+            <div className={s.column}>
+                <SuperInputText value={name}
+                                onChange={setNameCallback}
+                                className={inputClass}
+                                onKeyPress={onPressEnter}
+                                error={error}/>
+                {/*<input value={name}*/}
+                {/*       onChange={setNameCallback}*/}
+                {/*       className={inputClass}*/}
+                {/*       onKeyPress={onPressEnter}/>*/}
+                {/*<div className={s.error}>{error}</div>*/}
             </div>
-            <button className={s.button} onClick={addUser} disabled={!name}>add</button>
+            <SuperButton className={s.button} onClick={addUser} disabled={!name}>add</SuperButton>
             <div className={s.count}>{totalUsers}</div>
         </div>
     )

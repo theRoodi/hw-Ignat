@@ -1,7 +1,10 @@
 .checkbox {
-
+    border: 1px solid red;
+}
+.checkbox:checked {
+    /*background-image: url("https://e7.pngegg.com/pngimages/259/534/png-clipart-check-mark-microstation-patchwork-miscellaneous-angle.png");*/
 }
 
 .spanClassName {
-
+    padding: 5px;
 }

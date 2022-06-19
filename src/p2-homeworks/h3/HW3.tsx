@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
+import s from './HW3.module.css'
 import {v1} from 'uuid';
 
 // types
@@ -26,12 +27,11 @@ function HW3() {
             homeworks 3
 
             {/*should work (должно работать)*/}
-            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+            <div className={s.column}>
+                <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+            </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeGreeting/>*/}
-            <hr/>
+
         </div>
     )
 }

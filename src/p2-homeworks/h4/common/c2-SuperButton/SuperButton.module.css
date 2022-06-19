@@ -1,7 +1,21 @@
 .default {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
 
+.default:hover {
+    background-color: #c5c5c5;
 }
 
 .red {
-    background: red;
+    background: #980000;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.red:hover {
+    background: #600000;
 }
