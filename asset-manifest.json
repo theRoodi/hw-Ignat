@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/theroodi.github.io/hw-by-ignat/static/css/main.cfc29d76.css",
+    "main.js": "/theroodi.github.io/hw-by-ignat/static/js/main.fc87b08b.js",
+    "index.html": "/theroodi.github.io/hw-by-ignat/index.html",
+    "main.cfc29d76.css.map": "/theroodi.github.io/hw-by-ignat/static/css/main.cfc29d76.css.map",
+    "main.fc87b08b.js.map": "/theroodi.github.io/hw-by-ignat/static/js/main.fc87b08b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfc29d76.css",
+    "static/js/main.fc87b08b.js"
+  ]
+}
