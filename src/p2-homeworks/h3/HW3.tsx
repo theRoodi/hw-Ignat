@@ -27,9 +27,9 @@ function HW3() {
             homeworks 3
 
             {/*should work (должно работать)*/}
-            <div className={s.column}>
-                <GreetingContainer users={users} addUserCallback={addUserCallback}/>
-            </div>
+            {/*<div className={s.column}>*/}
+            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+            {/*</div>*/}
 
 
         </div>

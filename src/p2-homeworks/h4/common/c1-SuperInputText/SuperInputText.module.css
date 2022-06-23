@@ -1,5 +1,6 @@
 .superInput {
-    padding: 5px;
+    height: 21px;
+    margin: 10px;
     background: rgba(164, 164, 164, 0.7);
     outline: none;
     border-radius: 15px;
@@ -12,8 +13,7 @@
     outline: none;
     border-radius: 15px;
     padding: 5px;
-    margin: 5px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .errorInput:focus {
@@ -22,9 +22,8 @@
 
 .error {
     color: #9f0000;
-    padding: 5px;
-    border: none;
+    height: 21px;
     border-radius: 5px;
     background-color: rgba(255, 140, 140, 0.51);
-    margin: 5px;
+    margin-left: 10px;
 }

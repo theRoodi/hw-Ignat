@@ -1,0 +1,22 @@
+.move{
+    margin-left: -250px;
+    padding: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.block{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: green;
+}
+
+.links:hover {
+    transform: translate(240px,0);
+    transition: 2s;
+}
